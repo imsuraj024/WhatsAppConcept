@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/accept_privacy">
+
+    <fragment android:id="@+id/accept_privacy"
+        android:name="com.suraj.whatsappconcept.fragments.AcceptPrivacyFragment"
+        tools:layout="@layout/fragment_accept_privacy">
+        <action
+            android:id="@+id/action_accept_privacy_to_mobile"
+            app:destination="@id/mobile" />
+    </fragment>
+
+    <fragment android:id="@+id/mobile"
+        android:name="com.suraj.whatsappconcept.fragments.MobileFragment"
+        tools:layout="@layout/fragment_mobile">
+        <action
+            android:id="@+id/action_mobile_to_pin"
+            app:destination="@id/pin" />
+    </fragment>
+
+    <fragment android:id="@+id/pin"
+        android:name="com.suraj.whatsappconcept.fragments.PinFragment"
+        tools:layout="@layout/fragment_pin">
+        <action
+            android:id="@+id/action_pin_to_mobile"
+            app:destination="@id/mobile" />
+        <action
+            android:id="@+id/action_pin_to_setup"
+            app:destination="@id/setup" />
+    </fragment>
+
+    <fragment android:id="@+id/setup"
+        android:name="com.suraj.whatsappconcept.fragments.ProfileSetupFragment"
+        tools:layout="@layout/fragment_profile_setup"/>
+
+</navigation>

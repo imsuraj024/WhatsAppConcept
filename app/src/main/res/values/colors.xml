@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_text">#292929</color>
+    <color name="secondary_text">#696B6A</color>
+    <color name="background">#FFFFFF</color>
+    <color name="action">#075E54</color>
+    <color name="notification">#25D366</color>
+    <color name="success">#34B7F1</color>
+    <color name="black">#000000</color>
+</resources>
